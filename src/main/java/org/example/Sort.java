@@ -33,6 +33,23 @@ public class Sort {
         return list;
     }
 
+    public int[] selectionSort(int[] list) {
+        for (int sortedIndex = 0; sortedIndex < list.length - 1; sortedIndex++) {
+            int minIndex = sortedIndex;
+
+            for (int i = sortedIndex + 1; i < list.length; i++){
+                if (list[i] < list[minIndex]) minIndex = i;
+            }
+
+            int tmp = list[sortedIndex];
+            list[sortedIndex] = list[minIndex];
+            list[minIndex] = tmp;
+
+            printList(list);
+        }
+        return list;
+    }
+
 
     void printList (int[] list) {
         for (int tmp = 0; tmp < list.length; tmp++) {

@@ -18,5 +18,12 @@ class SortTest {
         int[] sortedList = sort.bubbleSort(list);
     }
 
+    @Test
+    public void testSelectionSort(){
+        int[] list = {5, 2, 4, 6, 1 ,3};
+        Sort sort = new Sort();
+        int[] sortedList = sort.selectionSort(list);
+    }
+
 
 }
