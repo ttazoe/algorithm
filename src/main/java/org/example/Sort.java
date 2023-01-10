@@ -1,20 +1,38 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Sort {
     public int[] insertionSort(int[] list) {
-        for (int i = 1; i < list.length; i++) {
-            int target = list[i];
+        int[] sortedList = Arrays.copyOf(list, list.length);
+        for (int i = 1; i < sortedList.length; i++) {
+            int target = sortedList[i];
 
             int j = i - 1;
-            while (j >= 0 && list[j] > target) {
-                list[j + 1] = list[j];
+            while (j >= 0 && sortedList[j] > target) {
+                sortedList[j + 1] = sortedList[j];
                 j--;
             }
-            list[j + 1] = target;
+            sortedList[j + 1] = target;
 
-            printList(list);
+            printList(sortedList);
         }
-        return list;
+        return sortedList;
+    }
+
+    public int[] insertionSort(int[] list, int period) {
+        int[] sortedList = Arrays.copyOf(list, list.length);
+        for (int i = period; i < sortedList.length; i++) {
+            int target = sortedList[i];
+            int j = i - period;
+            while (j >= 0 && sortedList[j] > target) {
+                sortedList[j + period] = sortedList[j];
+                j = j - period;
+            }
+            sortedList[j + period] = target;
+            printList(sortedList);
+        }
+        return sortedList;
     }
 
     public int[] bubbleSort(int[] list) {
@@ -37,7 +55,7 @@ public class Sort {
         for (int sortedIndex = 0; sortedIndex < list.length - 1; sortedIndex++) {
             int minIndex = sortedIndex;
 
-            for (int i = sortedIndex + 1; i < list.length; i++){
+            for (int i = sortedIndex + 1; i < list.length; i++) {
                 if (list[i] < list[minIndex]) minIndex = i;
             }
 
@@ -50,8 +68,19 @@ public class Sort {
         return list;
     }
 
+    public int[] shellSort(int[] list){
+        int[] sortedList = Arrays.copyOf(list, list.length);
+        int[] periodList = {4,3,1};
 
-    void printList (int[] list) {
+        for (int period : periodList) {
+            insertionSort(sortedList,period);
+        }
+
+        return sortedList;
+    }
+
+
+    void printList(int[] list) {
         for (int tmp = 0; tmp < list.length; tmp++) {
             System.out.printf("%d ", list[tmp]);
         }

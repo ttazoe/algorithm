@@ -25,5 +25,11 @@ class SortTest {
         int[] sortedList = sort.selectionSort(list);
     }
 
+    @Test
+    public void shellSort(){
+        int[] list = {5, 2, 4, 6, 1 ,3};
+        Sort sort = new Sort();
+        int[] sortedList = sort.shellSort(list);
+    }
 
 }
