@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.sort.Sort;
 import org.junit.jupiter.api.Test;
 
 class SortTest {
