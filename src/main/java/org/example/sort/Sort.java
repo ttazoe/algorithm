@@ -68,22 +68,66 @@ public class Sort {
         return list;
     }
 
-    public int[] shellSort(int[] list){
+    public int[] shellSort(int[] list) {
         int[] sortedList = Arrays.copyOf(list, list.length);
-        int[] periodList = {4,3,1};
+        int[] periodList = {4, 3, 1};
 
         for (int period : periodList) {
-            insertionSort(sortedList,period);
+            insertionSort(sortedList, period);
         }
 
         return sortedList;
     }
 
 
-    void printList(int[] list) {
+    public void mergeSort(int[] list, int left, int right) {
+        if (right - left > 1) {
+            int mid = (right - left) / 2;
+            mergeSort(list,left,mid);
+            mergeSort(list,mid,right);
+            merge(list,left,mid,right);
+        }
+    }
+
+    public int[] merge(int[] list, int left, int mid, int right) {
+        int[] leftList = new int[mid - left + 1];
+        int[] rightList = new int[right - mid + 1];
+        int[] returnList = new int[right - left];
+
+        for (int i = 0; i < leftList.length - 1; i++) {
+            leftList[i] = list[left + i];
+        }
+        leftList[leftList.length - 1] = 10_000_000;
+
+        for (int i = 0; i < rightList.length - 1; i++) {
+            rightList[i] = list[right + i];
+        }
+        rightList[rightList.length - 1] = 10_000_000;
+
+
+        int li = 0;
+        int ri = 0;
+        for (int k = 0; k < right - left; k++) {
+            if (leftList[li] < rightList[ri]) {
+                returnList[k] = leftList[li];
+                li++;
+            } else {
+                returnList[k] = rightList[ri];
+                ri++;
+            }
+        }
+        System.out.println(returnList);
+        return returnList;
+    }
+
+
+
+    public void printList(int[] list) {
         for (int tmp = 0; tmp < list.length; tmp++) {
             System.out.printf("%d ", list[tmp]);
         }
         System.out.println("");
     }
+
+
 }

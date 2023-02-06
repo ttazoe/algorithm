@@ -33,4 +33,11 @@ class SortTest {
         int[] sortedList = sort.shellSort(list);
     }
 
+    @Test
+    public void mergeSort(){
+        int[] list = {5, 2, 4, 6, 1 ,3};
+        Sort sort = new Sort();
+        sort.mergeSort(list,0,list.length);
+    }
+
 }
