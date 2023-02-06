@@ -12,6 +12,8 @@ public class IntersectionOfTwoArrays_349 {
             numsHashSet.add(num);
         }
         for(int num : nums2){
+            // TODO : numHashSet.remove() を使うことで、比較対象から除くことができる。
+            // Dupliacate 側で Set を使わなくてよい。
             if (numsHashSet.contains(num)){
                 duplicateNumsHashSet.add(num);
             }
