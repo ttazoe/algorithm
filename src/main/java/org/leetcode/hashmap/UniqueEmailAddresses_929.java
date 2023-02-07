@@ -10,7 +10,6 @@ public class UniqueEmailAddresses_929 {
         for(String email : emails) {
             int atIndex = email.indexOf("@");
             int plusIndex = email.indexOf("+");
-
             String local;
             String domain = email.substring(atIndex);
             if(plusIndex > 0 && plusIndex < atIndex) {
