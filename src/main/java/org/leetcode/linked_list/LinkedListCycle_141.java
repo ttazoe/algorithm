@@ -36,7 +36,6 @@ public class LinkedListCycle_141 {
         return false;
     }
 
-    // HashSet
     public boolean hasCycle(ListNode head) {
         Set<ListNode> checkedNodeList = new HashSet<>();
 
