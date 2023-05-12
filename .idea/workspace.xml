@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed129a58-aad7-4113-8257-7779126d3efe" name="Changes" comment="# ==== Commit Messages ====&#10;&#10;# ==== Commit Messages(Template) ====&#10;# :emoji: #Issue番号 変更内容&#10;# 例) :+1: #438 コメント追加&#10;#       👍 #438 コメント追加&#10;# ==== Prefix ====&#10;# :fix: バグ修正&#10;# :hotfix: クリティカルなバグ修正&#10;# :add: 新規機能・新規ファイル追加&#10;# :feat: feature&#10;# :update: バグではない機能修正&#10;# :change: 仕様変更による機能修正&#10;# :docs: ドキュメントのみ修正&#10;# :disable: 無効化&#10;# :remove(delete): ファイル削除、コードの一部を取り除く&#10;# :rename: ファイル名の変更&#10;# :upgrade: バージョンアップ&#10;# :revert: 修正取り消し&#10;# :style: 空白、セミコロン、行、コーディングフォーマットなどの修正&#10;# :refactor(clean,improve): リファクタリング&#10;# :test: テスト追加や間違っていたテストの修正&#10;# :chore: ビルドツールやライブラリで自動生成されたものをコミットするとき&#10;&#10;# ==== Emojis ====&#10;# 🐛  :bug: バグ修正&#10;# 👍  :+1: 機能改善&#10;# ✨  :sparkles: 部分的な機能追加&#10;# 🎨  :art: デザイン変更のみ&#10;# 💢  :anger: コンフリクト&#10;# 🚧  :construction: WIP&#10;# 📝  :memo: 文言修正&#10;# ♻️  :recycle: リファクタリング&#10;# 🔥  :fire: 不要な機能・使われなくなった機能の削除&#10;# 💚  :green_heart: テストやCIの修正・改善&#10;# 👕  :shirt: Lintエラーの修正やコードスタイルの修正&#10;# 🚀  :rocket: パフォーマンス改善&#10;# 🆙  :up: 依存パッケージなどのアップデート&#10;# 👮  :cop: セキュリティ関連の改善&#10;# ⚙   :gear: config変更&#10;# 📚  :books: ドキュメント" />
+    <list default="true" id="ed129a58-aad7-4113-8257-7779126d3efe" name="Changes" comment="&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)">
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="algorithm" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,13 +65,16 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Takashi Tazoe/IdeaProjects/terraform-module-ecs-general-mqtt-upload&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tatazoe/ghq/github.com-for-private/ttazoe/algorithm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;google-java-format.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -83,6 +111,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="SortTest.shellSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -106,6 +135,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="SortTest.testBubbleSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -129,6 +159,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="SortTest.testInsertionSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -152,6 +183,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="SortTest.testSelectionSort" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -175,6 +207,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -196,6 +229,28 @@
       <option name="presentableId" value="Default" />
       <updated>1673351092086</updated>
     </task>
+    <task id="LOCAL-00001" summary=":feat: Leet Code 543/876&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)">
+      <created>1683236867425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683236867425</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":feat: leet code 217&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)">
+      <created>1683237358083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683237358083</updated>
+    </task>
+    <task id="LOCAL-00003" summary="leet code 155&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)">
+      <created>1683320760083</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683320760083</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +263,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":feat: Leet Code 543&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)" />
+    <MESSAGE value=":feat: Leet Code 543/876&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)" />
+    <MESSAGE value=":feat: leet code 217&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)" />
+    <MESSAGE value="leet code 155&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)" />
+    <option name="LAST_COMMIT_MESSAGE" value="leet code 155&#10;# ==== Prefix ====&#10;# fix&#10;# feat&#10;# docs&#10;# style&#10;# refactor&#10;# test&#10;# chore&#10; &#10;# ==== Emojis ====&#10;# :bug:         バグ修正 (fix)&#10;# :+1:          機能改善 (fix/feat)&#10;# :sparkles:    部分的な機能追加 (feat)&#10;# :tada:        盛大に祝うべき大きな機能追加 (feat)&#10;# :rocket:      パフォーマンス改善 (feat)&#10;# :lock:        新機能の公開範囲の制限 (feat)&#10;# :cop:         セキュリティ関連の改善 (feat)&#10;# :note:        ドキュメント修正 (docs)&#10;# :shirt:       Lintエラーの修正やコードスタイルの修正 (style)&#10;# :recycle:     リファクタリング (refactor)&#10;# :shower:      不要な機能・使われなくなった機能の削除 (refactor)&#10;# :green_heart: テストやCIの修正・改善 (test)&#10;# :up:          依存パッケージなどのアップデート (chore)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
